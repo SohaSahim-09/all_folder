@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+}
+
+header{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color:white;
+    padding: 1rem;
+    padding-left: 10rem;
+    
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    padding:20px;
+    font-size: 1.1rem;
+    padding-right: 3rem;
+    justify-content: space-around
+}
+
+button{
+    background-color: aqua;
+    border-radius:0.2rem ;
+    color: black;
+    border-color: aqua;
+}
+.main-section{
+    background-image: url(https://images.stockcake.com/public/f/0/6/f06df0a9-588c-45b3-b670-92b498d9b7a1_large/group-study-session-stockcake.jpg) ;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+
+}
+.overlay{
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   height: 90vh;
+   color: white;
+   background: rgba(0,0, 0, 0.5);
+}
+h1{
+    color: rgb(219, 188, 149);
+}
+p{
+    color: rgb(205, 177, 143);
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    padding: 1rem 3rem;
+}
+.category-section{
+      padding: 1rem 2rem;
+      background-color: rgb(202, 210, 216);
+}
+
+.category-section ul li{
+    list-style: none;
+    padding: 1rem 0;
+}
+.category-section h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+}
+.project{
+    color: black;
+}
+.card{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-self: center;
+
+}
+.card div{
+    
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@media screen and (max-width:768px){
+    .header div a{
+        display: none;
+    }
+    .main{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

@@ -1,0 +1,43 @@
+div{
+    height: 600px;
+    width: 600px;
+    background-color: red;
+    color: white;
+    font-size: xx-large;
+}
+
+@media screen and (max-width:1024px){
+    div{
+        height: 500px;
+        width: 500px;
+        background-color: rgb(167, 224, 9);
+        font-size: x-large;
+    }
+    
+}
+@media screen and (max-width:900px){
+    div{
+        height: 400px;
+        width: 400px;
+        background-color: rgb(18, 229, 176);
+        font-size: large;
+    }
+    
+}
+
+@media screen and (max-width:600px){
+    div{
+        height: 300px;
+        width: 300px;
+        background-color: blue;
+        font-size: small;
+    }
+    
+}
+/*@media screen and (min-width:576px) {
+    div{
+        background-color: rgb(8, 43, 241);
+        font-size: x-large;
+    }
+}*/
+
